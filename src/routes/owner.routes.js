@@ -8,8 +8,6 @@ const router = Router();
 * @openapi
 * /api/v1/owners:
 *   get:
-*     security:
-*       - bearerAuth: []
 *     summary: Get all owners
 *     tags: [Owner]
 *     responses:
@@ -23,8 +21,6 @@ const router = Router();
 *         description: The business was not found
 * /api/v1/owner/{id}:
 *   get:
-*     security:
-*       - bearerAuth: []
 *     summary: Get a owner by id
 *     tags: [Owner]
 *     parameters:
