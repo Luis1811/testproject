@@ -67,9 +67,9 @@ const router = Router();
 *         description: The business was not found
 */
 
-router.get('/owners', authorizationOwner, getAllOwners);
+router.get('/owners', getAllOwners);
 
-router.get('/owner/:id', authorizationOwner, getOwner);
+router.get('/owner/:id', getOwner);
 
 router.delete('/owner/:id/delete', authorizationOwner, deleteOwner);
 
